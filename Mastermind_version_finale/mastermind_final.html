@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: rgb(194, 188, 188);
+            font-size: 10px;
+        }
+        
+        .red {
+            background-color: rgb(206, 51, 51);
+        }
+        
+        .blue {
+            background-color: rgb(20, 82, 218);
+        }
+        
+        .green {
+            background-color: rgb(37, 202, 37);
+        }
+        
+        .yellow {
+            background-color: rgb(241, 241, 90);
+        }
+        
+        .orange {
+            background-color: rgb(241, 174, 48);
+        }
+        
+        .cel {
+            height: 50px;
+            width: 50px;
+        }
+        
+        .white {
+            background-color: white;
+        }
+    </style>
+    <title>Mastermind</title>
+</head>
+
+<body>
+    <div class="container ">
+        <div class="row ">
+            <div class="mt-5" id="afficheurCouleurChoisi " style="font-size:24px">MASTERMIND</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-primary m-auto" onclick="facileSolo()" id="btnFacileSolo">Facile 1 Joueur</button>
+                <button class="btn btn-danger m-auto" onclick="difficileSolo()" id="btnDifficileSolo">Difficile 1 Joueur</button>
+                <button class="btn btn-primary m-auto" onclick="facileMulti()" id="btnFacileMulti">Facile 2 Joueur</button>
+                <button class="btn btn-danger m-auto" onclick="difficileMulti()" id="btnDifficileMulti">Difficile 2 Joueur</button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div id="plateauxJeux" class=""></div>
+            <div id="pionsNoirBlanc" class=""></div>
+            <div id="boutons"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-3"></div>
+            <div class="col-4 m-a"><button class="btn btn-primary" id="btnRestart">Restart</button></div>
+            <div></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="script_mastermind.js"></script>
+</body>
+
+</html>
